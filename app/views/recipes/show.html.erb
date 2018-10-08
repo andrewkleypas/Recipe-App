@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if @recipe.image? %>
+<%= image_tag @recipe.image.url, class: "recipe-box" %>
+<% end %>
 
 <p>
   <strong>Title:</strong>
@@ -11,20 +13,10 @@
 </p>
 
 <h3>Ingredients</h3>
-
-
 <ul>
-
-
 <% for @ingredient in @recipe.ingredients %>
-
-
 <li><%= @ingredient.content %></li>
-
-
 <% end %>
-
-
 </ul>
 
 <h3>Steps</h3>
