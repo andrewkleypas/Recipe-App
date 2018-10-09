@@ -18,6 +18,7 @@ gem 'execjs'
 gem 'nested_form_fields'
 gem 'carrierwave', '~> 1.0'
 gem 'devise'
+gem 'fog-aws'
 
 group :production do
 	gem 'pg'
